@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CodeMingleApp</string>
+    <string name="title_home">Business Profile</string>
+    <string name="title_home1">BUSINESS PROFILE</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="nickname">Nick Name</string>
+    <string name="emergencycontact">Emergency Contact</string>
+    <string name="emergencynum">Emergency Number</string>
+    <string name="school">School</string>
+    <string name="schoolname">School Name</string>
+    <string name="M">M</string>
+    <string name="profile">Profile</string>
+    <string name="address">address</string>
+    <string name="phone">phone</string>
+    <string name="email">email</string>
+    <string name="designation">designation</string>
+    <string name="view">View</string>
+    <string name="name">name</string>
+    <string name="back">back</string>
+    <string name="extlink">external link</string>
+</resources>
