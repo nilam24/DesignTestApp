@@ -34,9 +34,9 @@ public class HomeViewModel extends ViewModel {
         return mText;
     }
 
-    public void getResponse( String userid){
+    public void getResponse(String userid){
 
-        String api_key="abc@123";
+        String api_key=" ";
         //String userid="11";
         Single<List<Example>> call= api.getResponseData(api_key,userid);
         call.subscribeOn(Schedulers.io())

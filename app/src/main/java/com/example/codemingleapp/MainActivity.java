@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         final ActionBar actionBar=getSupportActionBar();
         actionBar.hide();
         HomeViewModel homeViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
-        homeViewModel.getResponse("11");
+        homeViewModel.getResponse(" ");
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
 
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
 
         //super.onBackPressed();   --this will do the natural back press from one by one screen the user has loaded while navigation
-//
+
 //        NavigationUI.navigateUp(navController,appBarConfiguration);
 //        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 //        NavigationUI.setupWithNavController(navView, navController);
