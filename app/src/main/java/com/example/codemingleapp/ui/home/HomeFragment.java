@@ -100,14 +100,48 @@ public class HomeFragment extends Fragment {
         LinearLayoutManager layoutManager=new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(layoutManager);
 
+        String location="Address1";
+        String nm="MName1";
+        String contact="ClientMobileNo1";
+        String emailId="EmailId1";
+        String designation="CompanyName1";
+        String location2="Address2";
+        String nm2="MName2";
+        String contact2="ClientMobileNo2";
+        String emailId2="EmailId2";
+        String designation2="CompanyName2";
+        String location3="Address1";
+        String nm3="MName1";
+        String contact3="ClientMobileNo1";
+        String emailId3="EmailId1";
+        String designation3="CompanyName1";
+        String location4="Address2";
+        String nm4="MName2";
+        String contact4="ClientMobileNo2";
+        String emailId4="EmailId2";
+        String designation4="CompanyName2";
+        Example example=new Example(nm,location,contact,emailId,designation);
+        Example example2=new Example(nm,location,contact,emailId,designation);
+        Example example3=new Example(nm,location,contact,emailId,designation);
+        Example example4=new Example(nm,location,contact,emailId,designation);
+        list.add(example);
+        list.add(example2);
+        list.add(example3);
+        list.add(example4);
+            adapter.setData(list);
+            recyclerView.setAdapter(adapter);
+            adapter.notifyDataSetChanged();
+
         homeViewModel.getResponseData().observe(this, new Observer<List<Example>>() {
             @Override
             public void onChanged(List<Example> examples) {
 
-                adapter.setData((ArrayList<Example>) examples);
+//                if(!examples.isEmpty()) {
+//                    adapter.setData((ArrayList<Example>) examples);
+//                    recyclerView.setAdapter(adapter);
+//                    adapter.notifyDataSetChanged();
+//                }
 
-                recyclerView.setAdapter(adapter);
-                adapter.notifyDataSetChanged();
             }
         });
 

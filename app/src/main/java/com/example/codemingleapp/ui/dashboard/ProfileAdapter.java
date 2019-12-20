@@ -39,6 +39,12 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
     @Override
     public void onBindViewHolder(@NonNull ProfileViewHolder holder, int position) {
 
+        if(list.isEmpty()){
+            holder.text6.setText("clientMobileNo");
+            holder.emergencyNum.setText("EMail");
+            holder.compName.setText("MName");
+            holder.text4.setText("MName");
+        }
 
         Example examples=list.get(position);
         examples.getOccupation();

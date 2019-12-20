@@ -50,6 +50,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.StatusViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull final StatusViewHolder holder, int position) {
 
+//        if(list.isEmpty()){
+//            holder.text1.setText("Address");
+//            holder.text2.setText("CompanyName");
+//            holder.text3.setText("ClientMobileNo");
+//            holder.text4.setText("Occupation");
+//            holder.text5.setText("CompanyName");
+//            String name="Mname";
+//            holder.textImage.setText(name.charAt(0)+"");
+//        }
+//        else {
         Example example=list.get(position);
         holder.text1.setText(example.getAddressDes());
         holder.text2.setText(example.getClientCompanyName());
